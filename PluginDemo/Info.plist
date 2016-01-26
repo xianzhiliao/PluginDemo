@@ -24,5 +24,17 @@
 	<string>Copyright © 2016年 Putao. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
+	<key>XCGCReady</key>
+	<true/>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>XCPluginHasUI</key>
+	<false/>
+	<key>XC4Compatible</key>
+	<true/>
+	<key>DVTPlugInCompatibilityUUIDs</key>
+	<array>
+		<string>7265231C-39B4-402C-89E1-16167C4CC990</string>
+	</array>
 </dict>
 </plist>

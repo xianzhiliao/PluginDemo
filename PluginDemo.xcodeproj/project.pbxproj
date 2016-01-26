@@ -6,9 +6,15 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		655C142B1C55F548003CF0C4 /* PluginDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 655C142A1C55F547003CF0C4 /* PluginDemo.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		655C14201C55F521003CF0C4 /* PluginDemo.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PluginDemo.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		655C14231C55F521003CF0C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655C14291C55F547003CF0C4 /* PluginDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginDemo.h; sourceTree = "<group>"; };
+		655C142A1C55F547003CF0C4 /* PluginDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,8 @@
 			isa = PBXGroup;
 			children = (
 				655C14231C55F521003CF0C4 /* Info.plist */,
+				655C14291C55F547003CF0C4 /* PluginDemo.h */,
+				655C142A1C55F547003CF0C4 /* PluginDemo.m */,
 			);
 			path = PluginDemo;
 			sourceTree = "<group>";
@@ -112,6 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655C142B1C55F548003CF0C4 /* PluginDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,11 +210,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "${HOME}";
 				INFOPLIST_FILE = PluginDemo/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				PRODUCT_BUNDLE_IDENTIFIER = Putao.PluginDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
@@ -214,11 +225,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "${HOME}";
 				INFOPLIST_FILE = PluginDemo/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				PRODUCT_BUNDLE_IDENTIFIER = Putao.PluginDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;
